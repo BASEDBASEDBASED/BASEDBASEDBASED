@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johnathan Lopez - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #667eea;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        /* Navigation */
+        .nav-bar {
+            background: #ff6b6b;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            background: white;
+            color: #333;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .nav-btn:hover {
+            background: #f0f0f0;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .nav-btn.active {
+            background: #333;
+            color: white;
+        }
+
+        /* Header Section */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 40px;
+            gap: 40px;
+        }
+
+        .header-content {
+            flex: 1;
+        }
+
+        .name {
+            font-size: 2.5em;
+            color: #4a90e2;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .contact-info a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 250px;
+            background: #87ceeb;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2em;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* Career Focus */
+        .career-focus {
+            background: #4a90e2;
+            color: white;
+            padding: 30px 40px;
+            margin: 0 40px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .career-focus h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        /* Content Sections */
+        .content {
+            padding: 0 40px 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #4a90e2;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #4a90e2;
+            padding-bottom: 10px;
+        }
+
+        .education-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #4a90e2;
+        }
+
+        .project {
+            background: #f0f8ff;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 5px solid #20c997;
+        }
+
+        .project h3 {
+            color: #20c997;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+
+        .project ul {
+            list-style-type: none;
+            margin-left: 0;
+        }
+
+        .project li {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .project li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #20c997;
+            font-weight: bold;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .skill-tag {
+            background: #4a90e2;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .nav-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .content, .career-focus {
+                margin: 20px;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-bar">
+            <div class="nav-buttons">
+                <a href="index.html" class="nav-btn active">Johnathan Lopez</a>
+                <a href="hobbies.html" class="nav-btn">Hobbies</a>
+                <a href="project1.html" class="nav-btn">Project 1</a>
+                <a href="project2.html" class="nav-btn">Project 2</a>
+            </div>
+        </nav>
+
+        <header class="header">
+            <div class="header-content">
+                <h1 class="name">Johnathan Lopez</h1>
+                <div class="contact-info">
+                    <p>(123) 444-7575 | jlopez4@oakland.edu</p>
+                    <p><a href="https://linkedin.com/in/jonathanlopez"></a> | <a href="#"></a></p>
+                    <p>School of Engineering and Computer Science</p>
+                    <p>Oakland University</p>
+                    <p>Rochester, MI 48309</p>
+                </div>
+            </div>
+            <div class="profile-image">
+                <img src="images/profile.jpg" alt="Johnathan">
+            </div>
+        </header>
+
+        <div class="career-focus">
+            <h2>About Me:</h2>
+            <p>Information Technology student, building skills with AWS and AZ cloud platforms. Current skills in Python, Bash, Java, PowerShell, and Kotlin. Passionate in group environments and eager to learn new things.</p>
+        </div>
+
+        <div class="content">
+            <section class="section">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>Bachelor of Science in Information Technology</h3>
+                    <p><strong>GPA:</strong> 3.4/4.0</p>
+                    <p><strong>Oakland University,</strong> Rochester, MI</p>
+                    <p><strong>Expected Graduation:</strong> May 2027</p>
+                    <div class="skills">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Bash</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">PowerShell</span>
+                        <span class="skill-tag">Kotlin</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Network Configuration</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Work Experience</h2>
+                
+                <div class="project">
+                    <h3>System Optimization</h3>
+                    <p style="color: #666; margin-bottom: 15px;"><strong>PriSys | 2023-2024</strong></p>
+                    <ul>
+                        <li>Optimized Windows networking parameters (registry values, DSCP markings, UDP offloading, RSS settings) and unavailable bios settings (using Scewin)</li>
+                        <li>Tuned CPU scheduling process priorities for improved system performance</li>
+                        <li>Developed PowerShell scripts for system automation and configuration management</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
